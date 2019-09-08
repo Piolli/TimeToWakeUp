@@ -7,14 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A8A189982322A39600A2E8E3 /* Date + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A189972322A39600A2E8E3 /* Date + Ext.swift */; };
 		A8CB23972321496000148CA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CB23962321496000148CA2 /* AppDelegate.swift */; };
 		A8CB23992321496000148CA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CB23982321496000148CA2 /* ViewController.swift */; };
 		A8CB239C2321496000148CA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8CB239A2321496000148CA2 /* Main.storyboard */; };
 		A8CB239E2321496100148CA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8CB239D2321496100148CA2 /* Assets.xcassets */; };
 		A8CB23A12321496100148CA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8CB239F2321496100148CA2 /* LaunchScreen.storyboard */; };
+		A8CB23A92321502700148CA2 /* SleepTimeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CB23A82321502700148CA2 /* SleepTimeCalculator.swift */; };
+		A8CB23B12321525100148CA2 /* SleepTimeCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CB23B02321525100148CA2 /* SleepTimeCalculatorTests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A8CB23B32321525100148CA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8CB238B2321495F00148CA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8CB23922321495F00148CA2;
+			remoteInfo = TimeToWakeUp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		A8A189972322A39600A2E8E3 /* Date + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + Ext.swift"; sourceTree = "<group>"; };
 		A8CB23932321496000148CA2 /* TimeToWakeUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeToWakeUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8CB23962321496000148CA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8CB23982321496000148CA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,10 +36,21 @@
 		A8CB239D2321496100148CA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8CB23A02321496100148CA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8CB23A22321496100148CA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8CB23A82321502700148CA2 /* SleepTimeCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepTimeCalculator.swift; sourceTree = "<group>"; };
+		A8CB23AE2321525100148CA2 /* SleepTimeCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SleepTimeCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8CB23B02321525100148CA2 /* SleepTimeCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepTimeCalculatorTests.swift; sourceTree = "<group>"; };
+		A8CB23B22321525100148CA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A8CB23902321495F00148CA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8CB23AB2321525100148CA2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				A8CB23952321496000148CA2 /* TimeToWakeUp */,
+				A8CB23AF2321525100148CA2 /* SleepTimeCalculatorTests */,
 				A8CB23942321496000148CA2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				A8CB23932321496000148CA2 /* TimeToWakeUp.app */,
+				A8CB23AE2321525100148CA2 /* SleepTimeCalculatorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,8 +87,19 @@
 				A8CB239D2321496100148CA2 /* Assets.xcassets */,
 				A8CB239F2321496100148CA2 /* LaunchScreen.storyboard */,
 				A8CB23A22321496100148CA2 /* Info.plist */,
+				A8CB23A82321502700148CA2 /* SleepTimeCalculator.swift */,
+				A8A189972322A39600A2E8E3 /* Date + Ext.swift */,
 			);
 			path = TimeToWakeUp;
+			sourceTree = "<group>";
+		};
+		A8CB23AF2321525100148CA2 /* SleepTimeCalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				A8CB23B02321525100148CA2 /* SleepTimeCalculatorTests.swift */,
+				A8CB23B22321525100148CA2 /* Info.plist */,
+			);
+			path = SleepTimeCalculatorTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +122,24 @@
 			productReference = A8CB23932321496000148CA2 /* TimeToWakeUp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A8CB23AD2321525100148CA2 /* SleepTimeCalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8CB23B52321525100148CA2 /* Build configuration list for PBXNativeTarget "SleepTimeCalculatorTests" */;
+			buildPhases = (
+				A8CB23AA2321525100148CA2 /* Sources */,
+				A8CB23AB2321525100148CA2 /* Frameworks */,
+				A8CB23AC2321525100148CA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8CB23B42321525100148CA2 /* PBXTargetDependency */,
+			);
+			name = SleepTimeCalculatorTests;
+			productName = SleepTimeCalculatorTests;
+			productReference = A8CB23AE2321525100148CA2 /* SleepTimeCalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +152,10 @@
 				TargetAttributes = {
 					A8CB23922321495F00148CA2 = {
 						CreatedOnToolsVersion = 10.2;
+					};
+					A8CB23AD2321525100148CA2 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = A8CB23922321495F00148CA2;
 					};
 				};
 			};
@@ -113,6 +173,7 @@
 			projectRoot = "";
 			targets = (
 				A8CB23922321495F00148CA2 /* TimeToWakeUp */,
+				A8CB23AD2321525100148CA2 /* SleepTimeCalculatorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +189,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A8CB23AC2321525100148CA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -136,11 +204,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8CB23992321496000148CA2 /* ViewController.swift in Sources */,
+				A8A189982322A39600A2E8E3 /* Date + Ext.swift in Sources */,
 				A8CB23972321496000148CA2 /* AppDelegate.swift in Sources */,
+				A8CB23A92321502700148CA2 /* SleepTimeCalculator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8CB23AA2321525100148CA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8CB23B12321525100148CA2 /* SleepTimeCalculatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A8CB23B42321525100148CA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8CB23922321495F00148CA2 /* TimeToWakeUp */;
+			targetProxy = A8CB23B32321525100148CA2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A8CB239A2321496000148CA2 /* Main.storyboard */ = {
@@ -314,6 +400,46 @@
 			};
 			name = Release;
 		};
+		A8CB23B62321525100148CA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YG4U6S73S9;
+				INFOPLIST_FILE = SleepTimeCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sanya.SleepTimeCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeToWakeUp.app/TimeToWakeUp";
+			};
+			name = Debug;
+		};
+		A8CB23B72321525100148CA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YG4U6S73S9;
+				INFOPLIST_FILE = SleepTimeCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sanya.SleepTimeCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeToWakeUp.app/TimeToWakeUp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -331,6 +457,15 @@
 			buildConfigurations = (
 				A8CB23A62321496100148CA2 /* Debug */,
 				A8CB23A72321496100148CA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8CB23B52321525100148CA2 /* Build configuration list for PBXNativeTarget "SleepTimeCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8CB23B62321525100148CA2 /* Debug */,
+				A8CB23B72321525100148CA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
