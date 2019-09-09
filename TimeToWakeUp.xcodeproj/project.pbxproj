@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A86BB0AA2326855C00495502 /* CalculatedTimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86BB0A82326855C00495502 /* CalculatedTimeCell.swift */; };
+		A86BB0AB2326855C00495502 /* CalculatedTimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A86BB0A92326855C00495502 /* CalculatedTimeCell.xib */; };
 		A8A189982322A39600A2E8E3 /* Date + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A189972322A39600A2E8E3 /* Date + Ext.swift */; };
 		A8CB23972321496000148CA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CB23962321496000148CA2 /* AppDelegate.swift */; };
 		A8CB23992321496000148CA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CB23982321496000148CA2 /* ViewController.swift */; };
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A86BB0A82326855C00495502 /* CalculatedTimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatedTimeCell.swift; sourceTree = "<group>"; };
+		A86BB0A92326855C00495502 /* CalculatedTimeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalculatedTimeCell.xib; sourceTree = "<group>"; };
 		A8A189972322A39600A2E8E3 /* Date + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + Ext.swift"; sourceTree = "<group>"; };
 		A8CB23932321496000148CA2 /* TimeToWakeUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeToWakeUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8CB23962321496000148CA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +93,8 @@
 				A8CB23A22321496100148CA2 /* Info.plist */,
 				A8CB23A82321502700148CA2 /* SleepTimeCalculator.swift */,
 				A8A189972322A39600A2E8E3 /* Date + Ext.swift */,
+				A86BB0A82326855C00495502 /* CalculatedTimeCell.swift */,
+				A86BB0A92326855C00495502 /* CalculatedTimeCell.xib */,
 			);
 			path = TimeToWakeUp;
 			sourceTree = "<group>";
@@ -184,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8CB23A12321496100148CA2 /* LaunchScreen.storyboard in Resources */,
+				A86BB0AB2326855C00495502 /* CalculatedTimeCell.xib in Resources */,
 				A8CB239E2321496100148CA2 /* Assets.xcassets in Resources */,
 				A8CB239C2321496000148CA2 /* Main.storyboard in Resources */,
 			);
@@ -203,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A86BB0AA2326855C00495502 /* CalculatedTimeCell.swift in Sources */,
 				A8CB23992321496000148CA2 /* ViewController.swift in Sources */,
 				A8A189982322A39600A2E8E3 /* Date + Ext.swift in Sources */,
 				A8CB23972321496000148CA2 /* AppDelegate.swift in Sources */,
