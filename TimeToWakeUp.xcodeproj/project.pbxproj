@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		A86BB0AA2326855C00495502 /* CalculatedTimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86BB0A82326855C00495502 /* CalculatedTimeCell.swift */; };
 		A86BB0AB2326855C00495502 /* CalculatedTimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A86BB0A92326855C00495502 /* CalculatedTimeCell.xib */; };
+		A87B360023279DE000B207DC /* CalculatedResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87B35FF23279DE000B207DC /* CalculatedResultsViewModel.swift */; };
+		A87B36022327A3BA00B207DC /* CalculatedWakeUpTimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87B36012327A3BA00B207DC /* CalculatedWakeUpTimeViewModel.swift */; };
+		A87B360A2327A72700B207DC /* CalculatedTimeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87B36092327A72700B207DC /* CalculatedTimeViewModelTests.swift */; };
+		A890BF7D233BAB8D00408257 /* CalculatedTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A890BF7C233BAB8D00408257 /* CalculatedTimeViewController.swift */; };
 		A8A189982322A39600A2E8E3 /* Date + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A189972322A39600A2E8E3 /* Date + Ext.swift */; };
 		A8CB23972321496000148CA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CB23962321496000148CA2 /* AppDelegate.swift */; };
 		A8CB23992321496000148CA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CB23982321496000148CA2 /* ViewController.swift */; };
@@ -20,6 +24,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A87B360C2327A72700B207DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8CB238B2321495F00148CA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8CB23922321495F00148CA2;
+			remoteInfo = TimeToWakeUp;
+		};
 		A8CB23B32321525100148CA2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A8CB238B2321495F00148CA2 /* Project object */;
@@ -32,6 +43,12 @@
 /* Begin PBXFileReference section */
 		A86BB0A82326855C00495502 /* CalculatedTimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatedTimeCell.swift; sourceTree = "<group>"; };
 		A86BB0A92326855C00495502 /* CalculatedTimeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalculatedTimeCell.xib; sourceTree = "<group>"; };
+		A87B35FF23279DE000B207DC /* CalculatedResultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatedResultsViewModel.swift; sourceTree = "<group>"; };
+		A87B36012327A3BA00B207DC /* CalculatedWakeUpTimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatedWakeUpTimeViewModel.swift; sourceTree = "<group>"; };
+		A87B36072327A72700B207DC /* CalculatedTimeViewModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatedTimeViewModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A87B36092327A72700B207DC /* CalculatedTimeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatedTimeViewModelTests.swift; sourceTree = "<group>"; };
+		A87B360B2327A72700B207DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A890BF7C233BAB8D00408257 /* CalculatedTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatedTimeViewController.swift; sourceTree = "<group>"; };
 		A8A189972322A39600A2E8E3 /* Date + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + Ext.swift"; sourceTree = "<group>"; };
 		A8CB23932321496000148CA2 /* TimeToWakeUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeToWakeUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8CB23962321496000148CA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +64,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A87B36042327A72700B207DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A8CB23902321495F00148CA2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -64,11 +88,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A87B35FA23279D2900B207DC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A8CB23982321496000148CA2 /* ViewController.swift */,
+				A8CB23962321496000148CA2 /* AppDelegate.swift */,
+				A890BF7C233BAB8D00408257 /* CalculatedTimeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A87B35FB23279D3300B207DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8CB239A2321496000148CA2 /* Main.storyboard */,
+				A8CB239F2321496100148CA2 /* LaunchScreen.storyboard */,
+				A86BB0A92326855C00495502 /* CalculatedTimeCell.xib */,
+				A86BB0A82326855C00495502 /* CalculatedTimeCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A87B35FC23279D3C00B207DC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A8CB23A82321502700148CA2 /* SleepTimeCalculator.swift */,
+				A87B35FF23279DE000B207DC /* CalculatedResultsViewModel.swift */,
+				A87B36012327A3BA00B207DC /* CalculatedWakeUpTimeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A87B35FD23279D5D00B207DC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A8A189972322A39600A2E8E3 /* Date + Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A87B35FE23279D6A00B207DC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A8CB239D2321496100148CA2 /* Assets.xcassets */,
+				A8CB23A22321496100148CA2 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A87B36082327A72700B207DC /* CalculatedTimeViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				A87B36092327A72700B207DC /* CalculatedTimeViewModelTests.swift */,
+				A87B360B2327A72700B207DC /* Info.plist */,
+			);
+			path = CalculatedTimeViewModelTests;
+			sourceTree = "<group>";
+		};
 		A8CB238A2321495F00148CA2 = {
 			isa = PBXGroup;
 			children = (
 				A8CB23952321496000148CA2 /* TimeToWakeUp */,
 				A8CB23AF2321525100148CA2 /* SleepTimeCalculatorTests */,
+				A87B36082327A72700B207DC /* CalculatedTimeViewModelTests */,
 				A8CB23942321496000148CA2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,6 +160,7 @@
 			children = (
 				A8CB23932321496000148CA2 /* TimeToWakeUp.app */,
 				A8CB23AE2321525100148CA2 /* SleepTimeCalculatorTests.xctest */,
+				A87B36072327A72700B207DC /* CalculatedTimeViewModelTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,16 +168,11 @@
 		A8CB23952321496000148CA2 /* TimeToWakeUp */ = {
 			isa = PBXGroup;
 			children = (
-				A8CB23962321496000148CA2 /* AppDelegate.swift */,
-				A8CB23982321496000148CA2 /* ViewController.swift */,
-				A8CB239A2321496000148CA2 /* Main.storyboard */,
-				A8CB239D2321496100148CA2 /* Assets.xcassets */,
-				A8CB239F2321496100148CA2 /* LaunchScreen.storyboard */,
-				A8CB23A22321496100148CA2 /* Info.plist */,
-				A8CB23A82321502700148CA2 /* SleepTimeCalculator.swift */,
-				A8A189972322A39600A2E8E3 /* Date + Ext.swift */,
-				A86BB0A82326855C00495502 /* CalculatedTimeCell.swift */,
-				A86BB0A92326855C00495502 /* CalculatedTimeCell.xib */,
+				A87B35FD23279D5D00B207DC /* Extension */,
+				A87B35FC23279D3C00B207DC /* ViewModel */,
+				A87B35FB23279D3300B207DC /* View */,
+				A87B35FA23279D2900B207DC /* Controller */,
+				A87B35FE23279D6A00B207DC /* Resources */,
 			);
 			path = TimeToWakeUp;
 			sourceTree = "<group>";
@@ -111,6 +189,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A87B36062327A72700B207DC /* CalculatedTimeViewModelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A87B360E2327A72700B207DC /* Build configuration list for PBXNativeTarget "CalculatedTimeViewModelTests" */;
+			buildPhases = (
+				A87B36032327A72700B207DC /* Sources */,
+				A87B36042327A72700B207DC /* Frameworks */,
+				A87B36052327A72700B207DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A87B360D2327A72700B207DC /* PBXTargetDependency */,
+			);
+			name = CalculatedTimeViewModelTests;
+			productName = CalculatedTimeViewModelTests;
+			productReference = A87B36072327A72700B207DC /* CalculatedTimeViewModelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A8CB23922321495F00148CA2 /* TimeToWakeUp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8CB23A52321496100148CA2 /* Build configuration list for PBXNativeTarget "TimeToWakeUp" */;
@@ -156,6 +252,10 @@
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = Alexandr;
 				TargetAttributes = {
+					A87B36062327A72700B207DC = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = A8CB23922321495F00148CA2;
+					};
 					A8CB23922321495F00148CA2 = {
 						CreatedOnToolsVersion = 10.2;
 					};
@@ -180,11 +280,19 @@
 			targets = (
 				A8CB23922321495F00148CA2 /* TimeToWakeUp */,
 				A8CB23AD2321525100148CA2 /* SleepTimeCalculatorTests */,
+				A87B36062327A72700B207DC /* CalculatedTimeViewModelTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A87B36052327A72700B207DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A8CB23912321495F00148CA2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -206,11 +314,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A87B36032327A72700B207DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A87B360A2327A72700B207DC /* CalculatedTimeViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A8CB238F2321495F00148CA2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A87B36022327A3BA00B207DC /* CalculatedWakeUpTimeViewModel.swift in Sources */,
+				A890BF7D233BAB8D00408257 /* CalculatedTimeViewController.swift in Sources */,
 				A86BB0AA2326855C00495502 /* CalculatedTimeCell.swift in Sources */,
+				A87B360023279DE000B207DC /* CalculatedResultsViewModel.swift in Sources */,
 				A8CB23992321496000148CA2 /* ViewController.swift in Sources */,
 				A8A189982322A39600A2E8E3 /* Date + Ext.swift in Sources */,
 				A8CB23972321496000148CA2 /* AppDelegate.swift in Sources */,
@@ -229,6 +348,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A87B360D2327A72700B207DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8CB23922321495F00148CA2 /* TimeToWakeUp */;
+			targetProxy = A87B360C2327A72700B207DC /* PBXContainerItemProxy */;
+		};
 		A8CB23B42321525100148CA2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A8CB23922321495F00148CA2 /* TimeToWakeUp */;
@@ -256,6 +380,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A87B360F2327A72700B207DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YG4U6S73S9;
+				INFOPLIST_FILE = CalculatedTimeViewModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sanya.CalculatedTimeViewModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeToWakeUp.app/TimeToWakeUp";
+			};
+			name = Debug;
+		};
+		A87B36102327A72700B207DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YG4U6S73S9;
+				INFOPLIST_FILE = CalculatedTimeViewModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sanya.CalculatedTimeViewModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeToWakeUp.app/TimeToWakeUp";
+			};
+			name = Release;
+		};
 		A8CB23A32321496100148CA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -378,7 +542,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YG4U6S73S9;
-				INFOPLIST_FILE = TimeToWakeUp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TimeToWakeUp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -396,7 +560,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YG4U6S73S9;
-				INFOPLIST_FILE = TimeToWakeUp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TimeToWakeUp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,6 +615,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A87B360E2327A72700B207DC /* Build configuration list for PBXNativeTarget "CalculatedTimeViewModelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A87B360F2327A72700B207DC /* Debug */,
+				A87B36102327A72700B207DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A8CB238E2321495F00148CA2 /* Build configuration list for PBXProject "TimeToWakeUp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

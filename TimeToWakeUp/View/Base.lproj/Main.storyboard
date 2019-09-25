@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UOI-XM-JUL">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Time to Wake Up-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TimeToWakeUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dKm-7y-1LR">
+                                <rect key="frame" x="70.5" y="161" width="273" height="29"/>
+                                <segments>
+                                    <segment title="Хочу проснуться в"/>
+                                    <segment title="Если пойду спать в"/>
+                                </segments>
+                                <connections>
+                                    <action selector="calculateTypeWasSwitched:" destination="BYZ-38-t0r" eventType="valueChanged" id="Flr-31-WpJ"/>
+                                </connections>
+                            </segmentedControl>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p6N-iM-hrm">
+                                <rect key="frame" x="20" y="197" width="374" height="649"/>
+                                <connections>
+                                    <segue destination="X19-na-Rso" kind="embed" id="MzE-Vn-zSX"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="p6N-iM-hrm" firstAttribute="top" secondItem="dKm-7y-1LR" secondAttribute="bottom" constant="8" id="21w-Sk-mAK"/>
+                            <constraint firstItem="dKm-7y-1LR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dwy-c7-r2U"/>
+                            <constraint firstItem="p6N-iM-hrm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="EAS-Sm-Kab"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="p6N-iM-hrm" secondAttribute="bottom" constant="16" id="QlY-fY-k9D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p6N-iM-hrm" secondAttribute="trailing" constant="20" id="SeP-iD-uSz"/>
+                            <constraint firstItem="dKm-7y-1LR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="21" id="fWZ-MX-hNZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Time to Wake Up" id="W67-TY-B2u"/>
+                    <connections>
+                        <outlet property="calculatorTypeSwitch" destination="dKm-7y-1LR" id="g5B-o7-KnB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1952.1739130434785" y="137.94642857142856"/>
+        </scene>
+        <!--Хочу лечь спать-->
+        <scene sceneID="rpB-pI-TGi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UOI-XM-JUL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Хочу лечь спать" id="YwK-7p-kFI"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="8tD-fh-W4D">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="VPg-rC-qyb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dPK-t5-XhP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1097.1014492753625" y="137.94642857142856"/>
+        </scene>
+        <!--Calculated Time View Controller-->
+        <scene sceneID="fBJ-Sj-TaL">
+            <objects>
+                <viewController id="X19-na-Rso" customClass="CalculatedTimeViewController" customModule="TimeToWakeUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uYk-ch-YTo">
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="649"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="BW2-R0-KlP">
+                                <rect key="frame" x="0.0" y="0.0" width="374" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="591112823.68946099">
+                                    <!--2019-09-25 14:00:23 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="ru_RU"/>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The better time is" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUX-ms-txS">
+                                <rect key="frame" x="104.5" y="232" width="165" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Prt-SQ-axS">
+                                <rect key="frame" x="16" y="274.5" width="342" height="340.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="BW2-R0-KlP" secondAttribute="trailing" id="1hO-xq-xfr"/>
+                            <constraint firstItem="BW2-R0-KlP" firstAttribute="top" secondItem="uYk-ch-YTo" secondAttribute="top" id="FYU-Gp-Ir8"/>
+                            <constraint firstItem="Prt-SQ-axS" firstAttribute="leading" secondItem="uYk-ch-YTo" secondAttribute="leadingMargin" id="T9l-o8-rgl"/>
+                            <constraint firstItem="jUX-ms-txS" firstAttribute="centerX" secondItem="uYk-ch-YTo" secondAttribute="centerX" id="fNI-0g-n1a"/>
+                            <constraint firstItem="Prt-SQ-axS" firstAttribute="top" secondItem="jUX-ms-txS" secondAttribute="bottom" constant="16" id="g2H-59-gSp"/>
+                            <constraint firstItem="jUX-ms-txS" firstAttribute="top" secondItem="BW2-R0-KlP" secondAttribute="bottom" constant="16" id="nN3-cA-739"/>
+                            <constraint firstItem="BW2-R0-KlP" firstAttribute="leading" secondItem="uYk-ch-YTo" secondAttribute="leading" id="pz6-9l-EJn"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Prt-SQ-axS" secondAttribute="bottom" id="wrA-wH-ey2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Prt-SQ-axS" secondAttribute="trailing" id="xwI-dg-VT5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qaS-cm-k83" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2743" y="138"/>
+        </scene>
+    </scenes>
+</document>

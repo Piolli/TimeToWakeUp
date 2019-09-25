@@ -15,4 +15,13 @@ extension Date {
         return newDate
     }
     
+    func format(toPattern pattern: String = "HH:mm") -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = pattern
+        
+        let formattedDate = dateFormatter.string(from: self)
+        
+        return formattedDate
+    }
+    
 }

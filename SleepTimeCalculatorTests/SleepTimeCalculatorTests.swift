@@ -168,7 +168,7 @@ class SleepTimeCalculatorTests: XCTestCase {
     func createDateWithDefaultComponents(hour: Int, minute: Int) -> Date {
         let components = Calendar.current.dateComponents([.year, .day, .month], from: Date())
         
-        return createDateFrom(year: components.year!, month: components.month!, day: components.day!, hour: components.hour!, minute: components.minute!)
+        return createDateFrom(year: components.year!, month: components.month!, day: components.day!, hour: hour, minute: minute)
     }
 
 

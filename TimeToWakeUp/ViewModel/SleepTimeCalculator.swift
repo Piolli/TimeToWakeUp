@@ -24,8 +24,8 @@ class SleepTimeCalculator {
         return resultTimesForWentToSleep
     }
     
-    func getTimesWhenToWakeUpIfWentToSleep(at wentToSleepTime: Date) -> [Date] {
-        var resultTimesForWakeUp = Array(repeating: wentToSleepTime, count: 4)
+    func getTimesWhenToWakeUpIfWentToSleep(at goToSleepTime: Date) -> [Date] {
+        var resultTimesForWakeUp = Array(repeating: goToSleepTime, count: 6)
         
         resultTimesForWakeUp[0] = resultTimesForWakeUp[0].plus(minute: 105)
         
