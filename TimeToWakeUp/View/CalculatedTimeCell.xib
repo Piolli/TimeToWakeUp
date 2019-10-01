@@ -19,27 +19,30 @@
                 <rect key="frame" x="0.0" y="0.0" width="360" height="53.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" spacing="131" translatesAutoresizingMaskIntoConstraints="NO" id="w64-lp-wmL">
-                        <rect key="frame" x="15" y="14" width="330.5" height="25.5"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryg-fV-9Yh">
-                                <rect key="frame" x="0.0" y="0.0" width="44.5" height="25.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Время сна: 9 часов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mD2-nP-o4H">
-                                <rect key="frame" x="175.5" y="0.0" width="155" height="25.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Время сна: 9 часов" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mD2-nP-o4H">
+                        <rect key="frame" x="180" y="16.5" width="180" height="20.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="180" id="oME-kM-Ox9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8:30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryg-fV-9Yh">
+                        <rect key="frame" x="40" y="14" width="65" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="65" id="DlD-yf-spv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="w64-lp-wmL" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="TFb-fP-VHg"/>
-                    <constraint firstItem="w64-lp-wmL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="uA6-vb-EXY"/>
+                    <constraint firstAttribute="trailing" secondItem="mD2-nP-o4H" secondAttribute="trailing" id="Cab-Re-FWa"/>
+                    <constraint firstItem="ryg-fV-9Yh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="Djj-2u-3bT"/>
+                    <constraint firstItem="ryg-fV-9Yh" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="d0C-Lm-Xo7"/>
+                    <constraint firstItem="mD2-nP-o4H" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="und-OX-6ld"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

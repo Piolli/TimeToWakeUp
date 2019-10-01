@@ -13,7 +13,7 @@ class SleepTimeCalculator {
     static let shared = SleepTimeCalculator()
     
     func getTimeWhenGoToSleepForWillWakeUp(at wakeUpTime: Date) -> [Date] {
-        var resultTimesForWentToSleep = Array(repeating: wakeUpTime, count: 4)
+        var resultTimesForWentToSleep = Array(repeating: wakeUpTime, count: 6)
         
         resultTimesForWentToSleep[0] = resultTimesForWentToSleep[0].plus(minute: -270)
         

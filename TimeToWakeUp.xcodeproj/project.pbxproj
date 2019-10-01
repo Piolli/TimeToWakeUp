@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A8081AD5233DC6D600A78E90 /* CalculatedTimeResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8081AD4233DC6D600A78E90 /* CalculatedTimeResultsViewController.swift */; };
+		A8081AD8233DC70D00A78E90 /* TimeCalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8081AD7233DC70D00A78E90 /* TimeCalculatorViewModel.swift */; };
+		A8081ADA233DC77D00A78E90 /* CalculatedTimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8081AD9233DC77D00A78E90 /* CalculatedTimeViewModel.swift */; };
+		A8081ADC233DC83000A78E90 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8081ADB233DC83000A78E90 /* Observable.swift */; };
+		A8081ADF233DC9C200A78E90 /* IKnowWhenGoToSleepViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8081ADE233DC9C200A78E90 /* IKnowWhenGoToSleepViewModel.swift */; };
 		A86BB0AA2326855C00495502 /* CalculatedTimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86BB0A82326855C00495502 /* CalculatedTimeCell.swift */; };
 		A86BB0AB2326855C00495502 /* CalculatedTimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A86BB0A92326855C00495502 /* CalculatedTimeCell.xib */; };
-		A87B360023279DE000B207DC /* CalculatedResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87B35FF23279DE000B207DC /* CalculatedResultsViewModel.swift */; };
-		A87B36022327A3BA00B207DC /* CalculatedWakeUpTimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87B36012327A3BA00B207DC /* CalculatedWakeUpTimeViewModel.swift */; };
 		A87B360A2327A72700B207DC /* CalculatedTimeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87B36092327A72700B207DC /* CalculatedTimeViewModelTests.swift */; };
-		A890BF7D233BAB8D00408257 /* CalculatedTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A890BF7C233BAB8D00408257 /* CalculatedTimeViewController.swift */; };
 		A8A189982322A39600A2E8E3 /* Date + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A189972322A39600A2E8E3 /* Date + Ext.swift */; };
 		A8CB23972321496000148CA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CB23962321496000148CA2 /* AppDelegate.swift */; };
 		A8CB23992321496000148CA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CB23982321496000148CA2 /* ViewController.swift */; };
@@ -21,6 +23,8 @@
 		A8CB23A12321496100148CA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8CB239F2321496100148CA2 /* LaunchScreen.storyboard */; };
 		A8CB23A92321502700148CA2 /* SleepTimeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CB23A82321502700148CA2 /* SleepTimeCalculator.swift */; };
 		A8CB23B12321525100148CA2 /* SleepTimeCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CB23B02321525100148CA2 /* SleepTimeCalculatorTests.swift */; };
+		A8D0DA2E23422148000F0A73 /* TimeCalculatorViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D0DA2D23422148000F0A73 /* TimeCalculatorViewModelTests.swift */; };
+		A8DB374623439F310053D8DF /* ResultsTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DB374523439F310053D8DF /* ResultsTableHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,14 +45,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A8081AD4233DC6D600A78E90 /* CalculatedTimeResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatedTimeResultsViewController.swift; sourceTree = "<group>"; };
+		A8081AD7233DC70D00A78E90 /* TimeCalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCalculatorViewModel.swift; sourceTree = "<group>"; };
+		A8081AD9233DC77D00A78E90 /* CalculatedTimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatedTimeViewModel.swift; sourceTree = "<group>"; };
+		A8081ADB233DC83000A78E90 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		A8081ADE233DC9C200A78E90 /* IKnowWhenGoToSleepViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IKnowWhenGoToSleepViewModel.swift; sourceTree = "<group>"; };
 		A86BB0A82326855C00495502 /* CalculatedTimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatedTimeCell.swift; sourceTree = "<group>"; };
 		A86BB0A92326855C00495502 /* CalculatedTimeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalculatedTimeCell.xib; sourceTree = "<group>"; };
-		A87B35FF23279DE000B207DC /* CalculatedResultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatedResultsViewModel.swift; sourceTree = "<group>"; };
-		A87B36012327A3BA00B207DC /* CalculatedWakeUpTimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatedWakeUpTimeViewModel.swift; sourceTree = "<group>"; };
 		A87B36072327A72700B207DC /* CalculatedTimeViewModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatedTimeViewModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A87B36092327A72700B207DC /* CalculatedTimeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatedTimeViewModelTests.swift; sourceTree = "<group>"; };
 		A87B360B2327A72700B207DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A890BF7C233BAB8D00408257 /* CalculatedTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatedTimeViewController.swift; sourceTree = "<group>"; };
 		A8A189972322A39600A2E8E3 /* Date + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + Ext.swift"; sourceTree = "<group>"; };
 		A8CB23932321496000148CA2 /* TimeToWakeUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeToWakeUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8CB23962321496000148CA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +67,8 @@
 		A8CB23AE2321525100148CA2 /* SleepTimeCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SleepTimeCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8CB23B02321525100148CA2 /* SleepTimeCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepTimeCalculatorTests.swift; sourceTree = "<group>"; };
 		A8CB23B22321525100148CA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8D0DA2D23422148000F0A73 /* TimeCalculatorViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCalculatorViewModelTests.swift; sourceTree = "<group>"; };
+		A8DB374523439F310053D8DF /* ResultsTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTableHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,12 +96,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A8081AD6233DC6EB00A78E90 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				A8081AD7233DC70D00A78E90 /* TimeCalculatorViewModel.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		A87B35FA23279D2900B207DC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				A8CB23982321496000148CA2 /* ViewController.swift */,
 				A8CB23962321496000148CA2 /* AppDelegate.swift */,
-				A890BF7C233BAB8D00408257 /* CalculatedTimeViewController.swift */,
+				A8081AD4233DC6D600A78E90 /* CalculatedTimeResultsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -105,6 +121,7 @@
 				A8CB239F2321496100148CA2 /* LaunchScreen.storyboard */,
 				A86BB0A92326855C00495502 /* CalculatedTimeCell.xib */,
 				A86BB0A82326855C00495502 /* CalculatedTimeCell.swift */,
+				A8DB374523439F310053D8DF /* ResultsTableHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -112,9 +129,10 @@
 		A87B35FC23279D3C00B207DC /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				A8081AD6233DC6EB00A78E90 /* Protocol */,
+				A8081AD9233DC77D00A78E90 /* CalculatedTimeViewModel.swift */,
+				A8081ADE233DC9C200A78E90 /* IKnowWhenGoToSleepViewModel.swift */,
 				A8CB23A82321502700148CA2 /* SleepTimeCalculator.swift */,
-				A87B35FF23279DE000B207DC /* CalculatedResultsViewModel.swift */,
-				A87B36012327A3BA00B207DC /* CalculatedWakeUpTimeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -139,6 +157,7 @@
 		A87B36082327A72700B207DC /* CalculatedTimeViewModelTests */ = {
 			isa = PBXGroup;
 			children = (
+				A8D0DA2D23422148000F0A73 /* TimeCalculatorViewModelTests.swift */,
 				A87B36092327A72700B207DC /* CalculatedTimeViewModelTests.swift */,
 				A87B360B2327A72700B207DC /* Info.plist */,
 			);
@@ -173,6 +192,7 @@
 				A87B35FB23279D3300B207DC /* View */,
 				A87B35FA23279D2900B207DC /* Controller */,
 				A87B35FE23279D6A00B207DC /* Resources */,
+				A8081ADB233DC83000A78E90 /* Observable.swift */,
 			);
 			path = TimeToWakeUp;
 			sourceTree = "<group>";
@@ -319,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A87B360A2327A72700B207DC /* CalculatedTimeViewModelTests.swift in Sources */,
+				A8D0DA2E23422148000F0A73 /* TimeCalculatorViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,13 +347,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A87B36022327A3BA00B207DC /* CalculatedWakeUpTimeViewModel.swift in Sources */,
-				A890BF7D233BAB8D00408257 /* CalculatedTimeViewController.swift in Sources */,
+				A8081ADC233DC83000A78E90 /* Observable.swift in Sources */,
+				A8DB374623439F310053D8DF /* ResultsTableHeaderView.swift in Sources */,
+				A8081ADA233DC77D00A78E90 /* CalculatedTimeViewModel.swift in Sources */,
 				A86BB0AA2326855C00495502 /* CalculatedTimeCell.swift in Sources */,
-				A87B360023279DE000B207DC /* CalculatedResultsViewModel.swift in Sources */,
+				A8081AD8233DC70D00A78E90 /* TimeCalculatorViewModel.swift in Sources */,
 				A8CB23992321496000148CA2 /* ViewController.swift in Sources */,
 				A8A189982322A39600A2E8E3 /* Date + Ext.swift in Sources */,
+				A8081ADF233DC9C200A78E90 /* IKnowWhenGoToSleepViewModel.swift in Sources */,
 				A8CB23972321496000148CA2 /* AppDelegate.swift in Sources */,
+				A8081AD5233DC6D600A78E90 /* CalculatedTimeResultsViewController.swift in Sources */,
 				A8CB23A92321502700148CA2 /* SleepTimeCalculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
