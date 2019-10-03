@@ -17,34 +17,10 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dKm-7y-1LR">
-                                <rect key="frame" x="70.5" y="161" width="273" height="29"/>
-                                <segments>
-                                    <segment title="Хочу проснуться в"/>
-                                    <segment title="Если пойду спать в"/>
-                                </segments>
-                                <connections>
-                                    <action selector="calculateTypeWasSwitched:" destination="BYZ-38-t0r" eventType="valueChanged" id="Flr-31-WpJ"/>
-                                </connections>
-                            </segmentedControl>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="dKm-7y-1LR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dwy-c7-r2U"/>
-                            <constraint firstItem="dKm-7y-1LR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="21" id="fWZ-MX-hNZ"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="dKm-7y-1LR"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Time to Wake Up" id="W67-TY-B2u"/>
-                    <connections>
-                        <outlet property="calculatorTypeSwitch" destination="dKm-7y-1LR" id="g5B-o7-KnB"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -110,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qaS-cm-k83" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2742.0289855072465" y="137.61160714285714"/>
+            <point key="canvasLocation" x="2803" y="138"/>
         </scene>
     </scenes>
 </document>

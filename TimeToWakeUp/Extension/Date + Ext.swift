@@ -24,4 +24,16 @@ extension Date {
         return formattedDate
     }
     
+    public func floor(precisionInSeconds: TimeInterval) -> Date {
+        return round(precision: precisionInSeconds, rule: .down)
+    }
+    
+    public func floor(precisionInMinutes: Int) -> Date {
+        return floor(precisionInSeconds: TimeInterval(precisionInMinutes * 60))
+    }
+    
+    private func round(precision: TimeInterval, rule: FloatingPointRoundingRule) -> Date {
+        let seconds = (self.timeIntervalSinceReferenceDate / precision).rounded(rule) *  precision;
+        return Date(timeIntervalSinceReferenceDate: seconds)
+    }
 }

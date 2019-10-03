@@ -22,10 +22,16 @@ struct CalculatedTimeViewModel : Equatable {
         return "Sleep time: \(diffentTime.format())"
     }
     
-    init(startTime: Date, calculatedTime: Date) {
-        self.startTime = startTime
+    init(goToSleepAt: Date, calculatedTime: Date) {
+        self.startTime = goToSleepAt
         self.calculatedTime = calculatedTime
         self.diffentTime = calculateDiffBetween(firstDate: startTime, and: calculatedTime)
+    }
+    
+    init(wakeUpAt: Date, calculatedTime: Date) {
+        self.startTime = wakeUpAt
+        self.calculatedTime = calculatedTime
+        self.diffentTime = calculateDiffBetween(firstDate: calculatedTime, and: wakeUpAt)
     }
     
     func calculateDiffBetween(firstDate start: Date, and end: Date) -> Date {
@@ -37,7 +43,5 @@ struct CalculatedTimeViewModel : Equatable {
         
         return diffDate
     }
-    
-    
-    
+
 }

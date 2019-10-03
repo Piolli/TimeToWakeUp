@@ -12,6 +12,8 @@ protocol TimeCalculatorViewModel {
     
     var calculateDescription: String { get }
     
+    var sourceTimeForCalculate: Date { get }
+    
     var results: Observable<[CalculatedTimeViewModel]?> { get set }
     
     func calculateWith(time: Date)

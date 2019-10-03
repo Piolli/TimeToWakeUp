@@ -13,8 +13,12 @@ class IKnowWhenGoToSleepViewModel : TimeCalculatorViewModel {
     var results: Observable<[CalculatedTimeViewModel]?> = Observable(value: nil)
     var goToSleepAt: Date
     
+    var sourceTimeForCalculate: Date {
+        return goToSleepAt
+    }
+    
     var calculateDescription: String {
-        return "The better time for wake up"
+        return "The best times for wake up"
     }
     
     init(goToSleepAt: Date) {
@@ -30,7 +34,7 @@ class IKnowWhenGoToSleepViewModel : TimeCalculatorViewModel {
         let resultTimes = SleepTimeCalculator.shared.getTimesWhenToWakeUpIfWentToSleep(at: goToSleepAt)
         
         let viewModels = resultTimes.map { (calculatedWakeUpTime) -> CalculatedTimeViewModel in
-            return CalculatedTimeViewModel(startTime: goToSleepAt, calculatedTime: calculatedWakeUpTime)
+            return CalculatedTimeViewModel(goToSleepAt: goToSleepAt, calculatedTime: calculatedWakeUpTime)
         }
         
         results.value = viewModels

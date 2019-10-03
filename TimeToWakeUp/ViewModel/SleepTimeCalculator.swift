@@ -12,28 +12,27 @@ class SleepTimeCalculator {
     
     static let shared = SleepTimeCalculator()
     
+    private let countOfCalculatedResults = 5
+    
+    private init() { }
+    
     func getTimeWhenGoToSleepForWillWakeUp(at wakeUpTime: Date) -> [Date] {
-        var resultTimesForWentToSleep = Array(repeating: wakeUpTime, count: 6)
-        
-        resultTimesForWentToSleep[0] = resultTimesForWentToSleep[0].plus(minute: -270)
-        
-        for i in 1..<resultTimesForWentToSleep.count {
-            resultTimesForWentToSleep[i] = resultTimesForWentToSleep[i-1].plus(minute: -90)
-        }
-        
-        return resultTimesForWentToSleep
+        return calculateTimePeriods(for: wakeUpTime, countOfPeriods: countOfCalculatedResults, initialAddedValue: -270, furtherAddedValue: -90)
     }
     
     func getTimesWhenToWakeUpIfWentToSleep(at goToSleepTime: Date) -> [Date] {
-        var resultTimesForWakeUp = Array(repeating: goToSleepTime, count: 6)
+        return calculateTimePeriods(for: goToSleepTime, countOfPeriods: countOfCalculatedResults, initialAddedValue: 105, furtherAddedValue: 90)
+    }
+    
+    func calculateTimePeriods(for time: Date, countOfPeriods: Int, initialAddedValue: Int, furtherAddedValue: Int) -> [Date] {
+        var resultTimes = Array(repeating: time, count: countOfPeriods)
+        resultTimes[0] = resultTimes[0].plus(minute: initialAddedValue)
         
-        resultTimesForWakeUp[0] = resultTimesForWakeUp[0].plus(minute: 105)
-        
-        for i in 1..<resultTimesForWakeUp.count {
-            resultTimesForWakeUp[i] = resultTimesForWakeUp[i-1].plus(minute: 90)
+        for i in 1..<resultTimes.count {
+            resultTimes[i] = resultTimes[i-1].plus(minute: furtherAddedValue)
         }
         
-        return resultTimesForWakeUp
+        return resultTimes
     }
     
 }

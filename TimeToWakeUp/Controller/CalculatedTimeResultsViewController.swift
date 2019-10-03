@@ -15,9 +15,13 @@ class CalculatedTimeResultsViewController: UIViewController {
     var viewModel: TimeCalculatorViewModel? {
         didSet {
             viewModel?.results.bind({ [weak self] (results) in
-                
                 self?.resultsTableView.reloadData()
             })
+            
+            if let sourceTime = viewModel?.sourceTimeForCalculate {
+                datePickerView.setDate(sourceTime, animated: true)
+            }
+            
             viewModel?.calculate()
         }
     }
@@ -70,7 +74,6 @@ class CalculatedTimeResultsViewController: UIViewController {
         //register xib
         let nib = UINib(nibName: "CalculatedTimeCell", bundle: nil)
         resultsTableView.register(nib, forCellReuseIdentifier: cellIdentifier)
-        resultsTableView.register(Header.self, forHeaderFooterViewReuseIdentifier: "header")
         
         NSLayoutConstraint.activate([
             resultsTableView.topAnchor.constraint(equalTo: datePickerView.bottomAnchor, constant: abovePicker),
@@ -112,24 +115,3 @@ extension CalculatedTimeResultsViewController : UITableViewDelegate {
     }
     
 }
-
-class Header : UITableViewHeaderFooterView {
-    
-    override func layoutSubviews() {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        addSubview(label)
-        label.text = "Something..."
-        
-        NSLayoutConstraint.activate([
-            label.topAnchor.constraint(equalTo: bottomAnchor),
-            label.leadingAnchor.constraint(equalTo: leadingAnchor),
-            label.trailingAnchor.constraint(equalTo: trailingAnchor),
-            label.bottomAnchor.constraint(equalTo: bottomAnchor)
-            ])
-        
-        textLabel?.text = "sfksdfksdfj"
-        backgroundColor = .yellow
-    }
-}
-
